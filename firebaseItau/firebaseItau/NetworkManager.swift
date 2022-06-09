@@ -9,11 +9,35 @@ import Foundation
 import FirebaseRemoteConfig
 
 class NetworkManager {
-    var remoteConfig: RemoteConfig!
+    let remoteConfig = RemoteConfig.remoteConfig()
 
-    func request<InitialModel: Error>(completionHandler: @escaping (Result<InitialModel, Error>) -> Void) {
+    init() {
+        loadDefaultValues(remoteConfig)
+    }
+    
+    func request(completionHandler: @escaping (Result<InitialModel, Error>) -> Void) {
         let remoteConfig = RemoteConfig.remoteConfig()
-
+        // RETIRAR
+        let settings = RemoteConfigSettings()
+        settings.minimumFetchInterval = 0
+        remoteConfig.configSettings = settings
+        
+        remoteConfig.fetchAndActivate  { [weak self] (status, error)  in
+            guard let self = self else { return }
+            guard let string = self.remoteConfig.configValue(forKey: "super_string").stringValue else { return }
+            completionHandler(.success(InitialModel(title: string)))
+            if status == .error {
+                guard let error = error else { return  }
+                completionHandler(.failure(error))
+            }
+        }
+    }
+    
+    func loadDefaultValues(_ remoteConfig: RemoteConfig) {
+      let appDefaults: [String: Any?] = [
+        "super_string": "Bem Vindo!"
+      ]
+        remoteConfig.setDefaults(appDefaults as? [String: NSObject])
     }
 
 }
