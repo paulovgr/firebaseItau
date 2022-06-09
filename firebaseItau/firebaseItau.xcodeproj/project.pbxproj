@@ -7,23 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1926250C28517D4000E63E4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1926250A28517D4000E63E4C /* Main.storyboard */; };
+		1926251228517FE300E63E4C /* InitialModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1926251128517FE300E63E4C /* InitialModel.swift */; };
+		19262514285180E200E63E4C /* InitialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19262513285180E200E63E4C /* InitialViewModel.swift */; };
+		192625162851841C00E63E4C /* ViewCodeConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192625152851841C00E63E4C /* ViewCodeConfig.swift */; };
+		192625192851855600E63E4C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 192625182851855600E63E4C /* SnapKit */; };
+		1926251C285185C600E63E4C /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1926251B285185C600E63E4C /* FirebaseRemoteConfigSwift */; };
 		195D1F07285156F000A15F3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D1F06285156F000A15F3C /* AppDelegate.swift */; };
 		195D1F09285156F000A15F3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D1F08285156F000A15F3C /* SceneDelegate.swift */; };
-		195D1F0B285156F000A15F3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D1F0A285156F000A15F3C /* ViewController.swift */; };
-		195D1F0E285156F000A15F3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 195D1F0C285156F000A15F3C /* Main.storyboard */; };
+		195D1F0B285156F000A15F3C /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D1F0A285156F000A15F3C /* InitialViewController.swift */; };
 		195D1F10285156F500A15F3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 195D1F0F285156F500A15F3C /* Assets.xcassets */; };
 		195D1F13285156F500A15F3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 195D1F11285156F500A15F3C /* LaunchScreen.storyboard */; };
+		195D1F1B28515A7000A15F3C /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D1F1A28515A7000A15F3C /* InitialView.swift */; };
+		195D1F1D28515E1900A15F3C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 195D1F1C28515E1900A15F3C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1926250B28517D4000E63E4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1926251128517FE300E63E4C /* InitialModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialModel.swift; sourceTree = "<group>"; };
+		19262513285180E200E63E4C /* InitialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewModel.swift; sourceTree = "<group>"; };
+		192625152851841C00E63E4C /* ViewCodeConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeConfig.swift; sourceTree = "<group>"; };
 		195D1F03285156F000A15F3C /* firebaseItau.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firebaseItau.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		195D1F06285156F000A15F3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		195D1F08285156F000A15F3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		195D1F0A285156F000A15F3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		195D1F0D285156F000A15F3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		195D1F0A285156F000A15F3C /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		195D1F0F285156F500A15F3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		195D1F12285156F500A15F3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		195D1F14285156F500A15F3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		195D1F1A28515A7000A15F3C /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
+		195D1F1C28515E1900A15F3C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +43,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				192625192851855600E63E4C /* SnapKit in Frameworks */,
+				1926251C285185C600E63E4C /* FirebaseRemoteConfigSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1926250D28517D6F00E63E4C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				195D1F06285156F000A15F3C /* AppDelegate.swift */,
+				195D1F08285156F000A15F3C /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 		195D1EFA285156F000A15F3C = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +79,17 @@
 		195D1F05285156F000A15F3C /* firebaseItau */ = {
 			isa = PBXGroup;
 			children = (
-				195D1F06285156F000A15F3C /* AppDelegate.swift */,
-				195D1F08285156F000A15F3C /* SceneDelegate.swift */,
-				195D1F0A285156F000A15F3C /* ViewController.swift */,
-				195D1F0C285156F000A15F3C /* Main.storyboard */,
+				1926250D28517D6F00E63E4C /* Application */,
+				195D1F0A285156F000A15F3C /* InitialViewController.swift */,
+				19262513285180E200E63E4C /* InitialViewModel.swift */,
+				195D1F1A28515A7000A15F3C /* InitialView.swift */,
+				1926251128517FE300E63E4C /* InitialModel.swift */,
+				192625152851841C00E63E4C /* ViewCodeConfig.swift */,
 				195D1F0F285156F500A15F3C /* Assets.xcassets */,
-				195D1F11285156F500A15F3C /* LaunchScreen.storyboard */,
 				195D1F14285156F500A15F3C /* Info.plist */,
+				195D1F1C28515E1900A15F3C /* GoogleService-Info.plist */,
+				1926250A28517D4000E63E4C /* Main.storyboard */,
+				195D1F11285156F500A15F3C /* LaunchScreen.storyboard */,
 			);
 			path = firebaseItau;
 			sourceTree = "<group>";
@@ -83,6 +110,10 @@
 			dependencies = (
 			);
 			name = firebaseItau;
+			packageProductDependencies = (
+				192625182851855600E63E4C /* SnapKit */,
+				1926251B285185C600E63E4C /* FirebaseRemoteConfigSwift */,
+			);
 			productName = firebaseItau;
 			productReference = 195D1F03285156F000A15F3C /* firebaseItau.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +142,10 @@
 				Base,
 			);
 			mainGroup = 195D1EFA285156F000A15F3C;
+			packageReferences = (
+				192625172851855600E63E4C /* XCRemoteSwiftPackageReference "SnapKit" */,
+				1926251A285185C600E63E4C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 195D1F04285156F000A15F3C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,8 +161,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				195D1F13285156F500A15F3C /* LaunchScreen.storyboard in Resources */,
+				195D1F1D28515E1900A15F3C /* GoogleService-Info.plist in Resources */,
 				195D1F10285156F500A15F3C /* Assets.xcassets in Resources */,
-				195D1F0E285156F000A15F3C /* Main.storyboard in Resources */,
+				1926250C28517D4000E63E4C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,19 +174,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				195D1F0B285156F000A15F3C /* ViewController.swift in Sources */,
+				195D1F1B28515A7000A15F3C /* InitialView.swift in Sources */,
+				1926251228517FE300E63E4C /* InitialModel.swift in Sources */,
+				192625162851841C00E63E4C /* ViewCodeConfig.swift in Sources */,
+				195D1F0B285156F000A15F3C /* InitialViewController.swift in Sources */,
 				195D1F07285156F000A15F3C /* AppDelegate.swift in Sources */,
 				195D1F09285156F000A15F3C /* SceneDelegate.swift in Sources */,
+				19262514285180E200E63E4C /* InitialViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		195D1F0C285156F000A15F3C /* Main.storyboard */ = {
+		1926250A28517D4000E63E4C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				195D1F0D285156F000A15F3C /* Base */,
+				1926250B28517D4000E63E4C /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -291,7 +331,7 @@
 				INFOPLIST_FILE = firebaseItau/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,7 +358,7 @@
 				INFOPLIST_FILE = firebaseItau/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -356,6 +396,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		192625172851855600E63E4C /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		1926251A285185C600E63E4C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		192625182851855600E63E4C /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 192625172851855600E63E4C /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		1926251B285185C600E63E4C /* FirebaseRemoteConfigSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1926251A285185C600E63E4C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfigSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 195D1EFB285156F000A15F3C /* Project object */;
 }
