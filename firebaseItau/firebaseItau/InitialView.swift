@@ -28,9 +28,8 @@ class InitialView: UIView {
     func setup(titleText: String) {
         titleLabel.text = titleText
     }
-    
-    
 }
+
     // MARK: - View Builders
 
 extension InitialView {
@@ -55,9 +54,6 @@ extension InitialView: ViewCode {
         titleLabel.snp.makeConstraints { make in
             make.centerX.equalTo(self)
             make.centerY.equalTo(self)
-            
         }
     }
-    
-    
 }

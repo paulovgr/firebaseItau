@@ -7,40 +7,30 @@
 
 import FirebaseRemoteConfig
 
+    // MARK: - Delegate
+
 protocol InitialViewModelDelegate: AnyObject{
-    func showTitle(model: InitialModel)
+    func showTitle(_ model: InitialModel)
 }
 
 class InitialViewModel {
-    var remoteConfig: RemoteConfig?
-    weak var delegate: InitialViewModelDelegate?
-    
-    
-    func fetchData() {
-        let remoteConfig = RemoteConfig.remoteConfig()
-        // RETIRAR
-        let settings = RemoteConfigSettings()
-        settings.minimumFetchInterval = 0
-        remoteConfig.configSettings = settings
 
-        remoteConfig.fetchAndActivate  { [weak self] (status, error)  in
+    // MARK: - Properties
+
+    weak var delegate: InitialViewModelDelegate?
+    private let networkManager = NetworkManager()
+    
+    // MARK: - Methods
+
+    func fetchData() {
+        networkManager.request { [weak self] result in
             guard let self = self else { return }
-            switch status {
-            case .successFetchedFromRemote:
-                guard let string = remoteConfig.configValue(forKey: "super_string").stringValue else { return }
-                self.delegate?.showTitle(model: InitialModel(title: string))
-            case .error:
-                break;
-            default:
-                break
+            switch result {
+            case .success(let model):
+                self.delegate?.showTitle(model)
+            case .failure(let error):
+                print(error.localizedDescription)
             }
         }
-    }
-    
-    func loadDefaultValues(_ remoteConfig: RemoteConfig) {
-      let appDefaults: [String: Any?] = [
-        "super_string": "#FBB03B"
-      ]
-        remoteConfig.setDefaults(appDefaults as? [String: NSObject])
     }
 }
