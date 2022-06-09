@@ -9,14 +9,13 @@ import UIKit
 import FirebaseRemoteConfig
 
 class InitialViewController: UIViewController {
+    
     // MARK: - Views
-     let initialView = InitialView()
-    var remoteConfig: RemoteConfig!
+    private let initialView = InitialView()
+    private let viewModel = InitialViewModel()
+    weak var coordinator: MainCoordinator?
     
-    
-    
-    
-    // MARK: - View Life Cycle
+    // MARK: - Life Cycle
     override func loadView() {
         super.loadView()
         self.view = initialView
@@ -24,35 +23,17 @@ class InitialViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let remoteConfig = RemoteConfig.remoteConfig()
-        let settings = RemoteConfigSettings()
-        settings.minimumFetchInterval = 0
-        remoteConfig.configSettings = settings
-        
-        remoteConfig.fetchAndActivate  { [weak self] (status, error)  in
-            switch status {
-            case .successFetchedFromRemote:
-                self?.initialView.setup(titleText: remoteConfig["super_string"].stringValue ?? "")
-                    print(remoteConfig["super_string"].stringValue)
-                
-                
-            case .error:
-                break
-            default:
-                break
-            }
-        }
-    
+        viewModel.fetchData()
+        viewModel.delegate = self
     }
-    
-    func loadDefaultValues(_ remoteConfig: RemoteConfig) {
-      let appDefaults: [String: Any?] = [
-        "super_string": "#FBB03B"
-      ]
-        remoteConfig.setDefaults(appDefaults as? [String: NSObject])
+}
+
+    // MARK: - InitialViewModelDelegate
+
+extension InitialViewController: InitialViewModelDelegate {
+    func showTitle(model: InitialModel) {
+        guard let title = model.title else { return }
+        initialView.setup(titleText: title)
     }
-
-
-
 }
 

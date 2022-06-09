@@ -33,6 +33,8 @@ class InitialView: UIView {
     }
 }
 
+    // MARK: - ViewCode
+
 extension InitialView: ViewCode {
     func setupViewHierarchy() {
         addSubview(titleLabel)

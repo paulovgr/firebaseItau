@@ -13,6 +13,8 @@
 		192625162851841C00E63E4C /* ViewCodeConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192625152851841C00E63E4C /* ViewCodeConfig.swift */; };
 		192625192851855600E63E4C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 192625182851855600E63E4C /* SnapKit */; };
 		1926251C285185C600E63E4C /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1926251B285185C600E63E4C /* FirebaseRemoteConfigSwift */; };
+		19342E7728519566009D8838 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19342E7628519566009D8838 /* MainCoordinator.swift */; };
+		19342E7A28519F76009D8838 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19342E7928519F76009D8838 /* NetworkManager.swift */; };
 		195D1F07285156F000A15F3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D1F06285156F000A15F3C /* AppDelegate.swift */; };
 		195D1F09285156F000A15F3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D1F08285156F000A15F3C /* SceneDelegate.swift */; };
 		195D1F0B285156F000A15F3C /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D1F0A285156F000A15F3C /* InitialViewController.swift */; };
@@ -27,6 +29,8 @@
 		1926251128517FE300E63E4C /* InitialModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialModel.swift; sourceTree = "<group>"; };
 		19262513285180E200E63E4C /* InitialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewModel.swift; sourceTree = "<group>"; };
 		192625152851841C00E63E4C /* ViewCodeConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeConfig.swift; sourceTree = "<group>"; };
+		19342E7628519566009D8838 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		19342E7928519F76009D8838 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		195D1F03285156F000A15F3C /* firebaseItau.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firebaseItau.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		195D1F06285156F000A15F3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		195D1F08285156F000A15F3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,10 +84,12 @@
 			isa = PBXGroup;
 			children = (
 				1926250D28517D6F00E63E4C /* Application */,
+				19342E7628519566009D8838 /* MainCoordinator.swift */,
 				195D1F0A285156F000A15F3C /* InitialViewController.swift */,
 				19262513285180E200E63E4C /* InitialViewModel.swift */,
 				195D1F1A28515A7000A15F3C /* InitialView.swift */,
 				1926251128517FE300E63E4C /* InitialModel.swift */,
+				19342E7928519F76009D8838 /* NetworkManager.swift */,
 				192625152851841C00E63E4C /* ViewCodeConfig.swift */,
 				195D1F0F285156F500A15F3C /* Assets.xcassets */,
 				195D1F14285156F500A15F3C /* Info.plist */,
@@ -174,7 +180,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19342E7A28519F76009D8838 /* NetworkManager.swift in Sources */,
 				195D1F1B28515A7000A15F3C /* InitialView.swift in Sources */,
+				19342E7728519566009D8838 /* MainCoordinator.swift in Sources */,
 				1926251228517FE300E63E4C /* InitialModel.swift in Sources */,
 				192625162851841C00E63E4C /* ViewCodeConfig.swift in Sources */,
 				195D1F0B285156F000A15F3C /* InitialViewController.swift in Sources */,
