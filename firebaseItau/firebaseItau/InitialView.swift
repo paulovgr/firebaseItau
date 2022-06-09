@@ -5,19 +5,16 @@
 //  Created by Paulo Victor Guimaraes Rosa on 08/06/22.
 //
 
-import Foundation
 import UIKit
 import SnapKit
 
 class InitialView: UIView {
-    private var titleLabel: UILabel = {
-        let label = UILabel(frame: .zero)
-        label.numberOfLines = 1
-        label.textColor = .black
-        label.font = UIFont.systemFont(ofSize: 40, weight: .bold)
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-      }()
+    
+    // MARK: - Properties
+
+    lazy var titleLabel = biuldLabel()
+    
+    // MARK: - Life Cycle
     
     init() {
         super.init(frame: .zero)
@@ -30,6 +27,20 @@ class InitialView: UIView {
     
     func setup(titleText: String) {
         titleLabel.text = titleText
+    }
+    
+    
+}
+    // MARK: - View Builders
+
+extension InitialView {
+    func biuldLabel() -> UILabel {
+        let label = UILabel(frame: .zero)
+        label.numberOfLines = 1
+        label.textColor = .black
+        label.font = UIFont.systemFont(ofSize: 40, weight: .bold)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
     }
 }
 

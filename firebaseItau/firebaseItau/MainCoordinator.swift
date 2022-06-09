@@ -16,20 +16,19 @@ protocol Coordinator {
     func start()
 }
 
-
 class MainCoordinator: Coordinator {
     
     // MARK: - Properties
     
     var navigationController: UINavigationController
     
-    // MARK: - Initialization
-    
+    // MARK: - Life Cycle
+
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
     
-    // MARK: - Internal Methods
+    // MARK: -  Methods
     
     func start() {
         let initialViewController = InitialViewController()

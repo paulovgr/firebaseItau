@@ -11,7 +11,11 @@ import FirebaseRemoteConfig
 class InitialViewController: UIViewController {
     
     // MARK: - Views
+
     private let initialView = InitialView()
+    
+    // MARK: - Properties
+
     private let viewModel = InitialViewModel()
     weak var coordinator: MainCoordinator?
     
