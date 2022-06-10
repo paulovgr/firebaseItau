@@ -12,8 +12,9 @@ class InitialView: UIView {
     
     // MARK: - Properties
 
-    lazy var titleLabel = biuldLabel()
-    lazy var errorLabel = biuldErrorLabel()
+    private lazy var titleLabel = biuldLabel()
+    private lazy var errorLabel = biuldErrorLabel()
+    private lazy var loaderIcon = UIActivityIndicatorView()
 
     
     // MARK: - Life Cycle
@@ -21,6 +22,7 @@ class InitialView: UIView {
     init() {
         super.init(frame: .zero)
         setupViews()
+        showLoader ()
     }
     
     required init?(coder: NSCoder) {
@@ -29,6 +31,7 @@ class InitialView: UIView {
     
     func setup(titleText: String) {
         titleLabel.text = titleText
+        stopLoader ()
     }
     
     
@@ -37,6 +40,15 @@ class InitialView: UIView {
         errorLabel.fadeIn(duration: 1.0, delay: 1) { _ in
             self.errorLabel.fadeOut()
         }
+    }
+    
+    func showLoader () {
+        loaderIcon.startAnimating()
+    }
+    
+    func stopLoader () {
+        loaderIcon.stopAnimating()
+        loaderIcon.hidesWhenStopped = true
     }
     
     
@@ -71,6 +83,7 @@ extension InitialView: ViewCode {
     func setupViewHierarchy() {
         addSubview(titleLabel)
         addSubview(errorLabel)
+        addSubview(loaderIcon)
     }
     
     func setupConstraints() {
@@ -82,6 +95,12 @@ extension InitialView: ViewCode {
         errorLabel.snp.makeConstraints { make in
             make.centerX.equalTo(self)
             make.bottom.equalTo(self).offset(-30)
+        }
+        
+        loaderIcon.snp.makeConstraints { make in
+            make.centerX.equalTo(self)
+            make.centerY.equalTo(self)
+            make.width.height.equalTo(50)
         }
         
     }
