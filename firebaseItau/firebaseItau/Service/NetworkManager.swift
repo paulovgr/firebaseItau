@@ -17,10 +17,6 @@ class NetworkManager {
     
     func request(completionHandler: @escaping (Result<InitialModel, Error>) -> Void) {
         let remoteConfig = RemoteConfig.remoteConfig()
-        // RETIRAR
-        let settings = RemoteConfigSettings()
-        settings.minimumFetchInterval = 0
-        remoteConfig.configSettings = settings
         
         remoteConfig.fetchAndActivate  { [weak self] (status, error)  in
             guard let self = self else { return }
