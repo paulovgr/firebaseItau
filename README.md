@@ -24,9 +24,10 @@ https://github.com/SnapKit/SnapKit.git
 https://github.com/firebase/firebase-ios-sdk
 
 ## Como rodar a aplicação
-O projeto derá rodar normalmente ao tentar executar ele no Xcode, caso necessário reinstalar as dependências, esse [link](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app) tem passo a passo
+O projeto devwrá rodar normalmente ao tentar executar ele no Xcode, caso necessário reinstalar as dependências, esse [link](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app) tem passo a passo
 ## Ferramentas utilizadas
 - Xcode 13.4.1 
+- Swift Package Manager
 
 ## Desenvolvedor
 Paulo Victor Guimarães Rosa
