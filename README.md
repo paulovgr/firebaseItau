@@ -9,8 +9,8 @@
 ## Descrição do projeto 
   <img src="https://user-images.githubusercontent.com/35931595/172967166-96bada9b-db76-47ec-ac8a-ee6f0c3455c3.png" width="200" align="right" />
 
-Projeto cujo a primeira página deve conter a string carregada dinamicamente pelo **Firebase Remote Config**, conforme imagem.
-O um parâmetro do Firebase Remote Config com a seguinte especificação:
+Projeto cujo a primeira página deve conter a string carregada dinamicamente pelo **Firebase Remote Config**, conforme imagem. <br/>
+O um parâmetro do Firebase Remote Config com a seguinte especificação: <br/>
 chave: super_string
 valor: Bem vindo!
 <br/>
