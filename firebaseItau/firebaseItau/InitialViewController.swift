@@ -35,6 +35,10 @@ class InitialViewController: UIViewController {
     // MARK: - InitialViewModelDelegate
 
 extension InitialViewController: InitialViewModelDelegate {
+    func showError() {
+        initialView.showError()
+    }
+    
     func showTitle(_ model: InitialModel) {
         guard let title = model.title else { return }
         initialView.setup(titleText: title)
