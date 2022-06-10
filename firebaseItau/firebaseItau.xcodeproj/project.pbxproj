@@ -60,8 +60,36 @@
 			children = (
 				195D1F06285156F000A15F3C /* AppDelegate.swift */,
 				195D1F08285156F000A15F3C /* SceneDelegate.swift */,
+				19342E7628519566009D8838 /* MainCoordinator.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		19342E912852ED2E009D8838 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				19342E7928519F76009D8838 /* NetworkManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		19342E922852ED3D009D8838 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				192625152851841C00E63E4C /* ViewCodeConfig.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		19342E932852ED7B009D8838 /* InitialView */ = {
+			isa = PBXGroup;
+			children = (
+				195D1F0A285156F000A15F3C /* InitialViewController.swift */,
+				19262513285180E200E63E4C /* InitialViewModel.swift */,
+				195D1F1A28515A7000A15F3C /* InitialView.swift */,
+				1926251128517FE300E63E4C /* InitialModel.swift */,
+			);
+			path = InitialView;
 			sourceTree = "<group>";
 		};
 		195D1EFA285156F000A15F3C = {
@@ -84,13 +112,9 @@
 			isa = PBXGroup;
 			children = (
 				1926250D28517D6F00E63E4C /* Application */,
-				19342E7628519566009D8838 /* MainCoordinator.swift */,
-				195D1F0A285156F000A15F3C /* InitialViewController.swift */,
-				19262513285180E200E63E4C /* InitialViewModel.swift */,
-				195D1F1A28515A7000A15F3C /* InitialView.swift */,
-				1926251128517FE300E63E4C /* InitialModel.swift */,
-				19342E7928519F76009D8838 /* NetworkManager.swift */,
-				192625152851841C00E63E4C /* ViewCodeConfig.swift */,
+				19342E932852ED7B009D8838 /* InitialView */,
+				19342E922852ED3D009D8838 /* Utils */,
+				19342E912852ED2E009D8838 /* Service */,
 				195D1F0F285156F500A15F3C /* Assets.xcassets */,
 				195D1F14285156F500A15F3C /* Info.plist */,
 				195D1F1C28515E1900A15F3C /* GoogleService-Info.plist */,
