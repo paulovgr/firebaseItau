@@ -11,7 +11,7 @@
 
 Projeto cujo a primeira página deve conter a string carregada dinamicamente pelo **Firebase Remote Config**, conforme imagem. <br/>
 O um parâmetro do Firebase Remote Config com a seguinte especificação: <br/>
-chave: super_string
+chave: super_string <br/>
 valor: Bem vindo!
 <br/>
 <br/>
